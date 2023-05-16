@@ -1,0 +1,47 @@
+.item-details{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.item-cart-details{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+    border: 2px solid rgb(146, 140, 188);
+    background-color: #FDE2F3;
+    box-shadow: 10px 10px purple;
+}
+.cart-item{
+    margin: 2px;
+    padding: 10px;
+}
+.main-image{
+    margin-left: 5px;
+}
+.no-product-in-cart{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.go-back-btn{
+    padding: 10px;
+    font-size: 15px;
+    background-color: #0C134F;
+    color: #FDE2F3;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.place-order-btn{
+    padding: 10px;
+    font-size: 15px;
+    background-color: #0C134F;
+    color: #FDE2F3;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.order-details-buy-btn{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

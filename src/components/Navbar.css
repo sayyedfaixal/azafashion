@@ -1,0 +1,58 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .navbar-logo img {
+    width: 100px;
+    height: 60px;
+    order: 1;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
+  .navbar-icon{
+    font-size: 40px;
+    order: 2;
+    margin-right: 30px;
+    color: maroon;
+    cursor: pointer;
+  }
+
+  .navbar-menu.active {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-menu-item {
+    margin-bottom: 10px;
+  }
+
+  .navbar-menu-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .navbar {
+      justify-content: flex-start;
+      padding: 10px 20px;
+    }
+  }
+
+  .card_details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
