@@ -6,18 +6,10 @@ const EachProduct = ({ eachProduct }) => {
   const dispatch = useDispatch();
   const [mainImage, setMainImage] = useState(eachProduct.mainImgUrl);
   const [allImages, setAllImages] = useState([eachProduct.allImgsList]);
+  console.log("Main Image : ", mainImage);
+  console.log("All Image : ", allImages[0]);
   const handleImageClick = (clickedImageUrl) => {
-    setAllImages((prevAllImages) => {
-      const updatedAllImages = [...prevAllImages]; // Create a copy of the array
-      console.log("updatedAllImages", updatedAllImages);
-      const clickedImageIndex = updatedAllImages[0].indexOf(clickedImageUrl);
-      debugger;
-      if (clickedImageIndex !== -1) {
-        updatedAllImages[clickedImageIndex] = mainImage; // Swap the clicked image with the main image
-        setMainImage(clickedImageUrl); // Update the main image URL
-      }
-      return updatedAllImages;
-    });
+    setMainImage(clickedImageUrl);
   };
 
   function handleDeleteProduct(deleteProductId) {
@@ -50,7 +42,7 @@ const EachProduct = ({ eachProduct }) => {
               </section>
               <section className="cart-item main-image">
                 <img
-                  src={eachProduct.mainImgUrl}
+                  src={mainImage}
                   style={{ height: 540 }}
                   alt="Main Product"
                 />
